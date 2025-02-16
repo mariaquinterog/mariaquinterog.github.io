@@ -8,7 +8,7 @@
 body {
     display: flex;
     height: 100vh;
-    overflow: hidden; /* Prevent scrolling */
+    /*overflow: hidden;  Prevent scrolling */
 }
 
 .container {
@@ -17,7 +17,7 @@ body {
 }
 
 .sidebar {
-    width: 35%; /* Adjusted to leave space for the content */
+    width: 60%; /* Adjusted to leave space for the content */
     background: white;
     padding: 40px;
     display: flex;
@@ -58,7 +58,7 @@ h2 {
 }
 
 .content {
-    width: 65%; /* Adjusted to match the remaining space */
+    width: 40%; /* Adjusted to match the remaining space */
     background-image: url('assets/background.jpg'); /* Add the background image */
     background-size: cover; /* Ensure the image covers the entire area */
     background-position: center; /* Center the image */
