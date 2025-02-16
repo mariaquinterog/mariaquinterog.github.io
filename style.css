@@ -7,73 +7,74 @@
 
 body {
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    /* overflow: hidden; Prevent scrolling */
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
 }
 
 .container {
-    display: flex;
+    max-width: 800px;
     width: 100%;
+    text-align: center;
 }
 
-.sidebar {
-    width: 60%; /* Adjusted to leave space for the content */
-    background: white;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-h1 {
-    font-size: 28px;
-    margin-bottom: 5px;
-}
-
-h2 {
+header h2 {
+    font-size: 1.5rem;
     color: green;
-    font-size: 20px;
     margin-bottom: 20px;
 }
 
 .links {
     list-style: none;
     padding: 0;
+    margin-bottom: 20px;
 }
 
 .links li {
-    margin: 10px 0;
+    display: inline;
+    margin: 0 10px;
 }
 
 .links a {
     text-decoration: none;
-    color: black;
-    font-size: 18px;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.dark-mode .links a {
+    color: #bb86fc;
 }
 
 .about {
-    margin-top: 20px;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.content {
-    width: 40%; /* Adjusted to match the remaining space */
-    background-image: url('assets/background.jpg'); /* Add the background image */
-    background-size: cover; /* Ensure the image covers the entire area */
-    background-position: center; /* Center the image */
-    height: 100vh; /* Full height */
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /* Toggle switch container */
 .theme-switch {
-    position: fixed; /* Fixed position to keep it in place */
-    top: 20px; /* Distance from the top */
-    right: 20px; /* Distance from the right */
+    position: fixed;
+    top: 20px;
+    right: 20px;
     display: inline-block;
-    width: 40px; /* Width of the toggle */
-    height: 20px; /* Height of the toggle */
-    z-index: 1000; /* Ensure it's above other elements */
+    width: 40px;
+    height: 20px;
+    z-index: 1000;
 }
 
 /* Hide the default checkbox */
@@ -91,49 +92,29 @@ h2 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc; /* Default light mode color */
-    transition: 0.4s; /* Smooth transition */
-    border-radius: 20px; /* Rounded corners */
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 20px;
 }
 
 /* Slider circle */
 .slider:before {
     position: absolute;
     content: "";
-    height: 16px; /* Size of the circle */
-    width: 16px; /* Size of the circle */
-    left: 2px; /* Position in light mode */
+    height: 16px;
+    width: 16px;
+    left: 2px;
     bottom: 2px;
-    background-color: white; /* Circle color */
-    transition: 0.4s; /* Smooth transition */
-    border-radius: 50%; /* Make it round */
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
 }
 
 /* Dark mode styles for the slider */
 .dark-mode .slider {
-    background-color: #333; /* Dark mode color */
+    background-color: #333;
 }
 
 .dark-mode .slider:before {
-    transform: translateX(20px); /* Move the circle to the right in dark mode */
-}
-
-/* Dark mode styles for the body */
-.dark-mode {
-    background-color: #121212; /* Dark background */
-    color: #ffffff; /* Light text */
-}
-
-.dark-mode .sidebar {
-    background-color: #1e1e1e; /* Dark sidebar background */
-    color: #ffffff; /* Light text */
-}
-
-.dark-mode .links a {
-    color: #bb86fc; /* Light purple for links in dark mode */
-}
-
-.dark-mode h1,
-.dark-mode h2 {
-    color: #ffffff; /* Light text for headings */
+    transform: translateX(20px);
 }
