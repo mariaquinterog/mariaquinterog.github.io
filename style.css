@@ -7,6 +7,8 @@
 
 body {
     display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
     height: 100vh;
     background-color: #f9f9f9;
     color: #333;
@@ -21,7 +23,9 @@ body {
 .container {
     display: flex;
     width: 100%;
+    max-width: 1200px; /* Limit the maximum width */
     height: 100vh;
+    margin: 0 auto; /* Center the container */
 }
 
 /* Left side: Content */
@@ -58,13 +62,13 @@ header h1 {
 
 header h2 {
     font-size: 1.2rem; /* Smaller subtitle */
-    color: #F35623;
+    color: #4CAF50;
     font-weight: 600;
     margin-bottom: 15px;
 }
 
 .dark-mode header h2 {
-    color: #F35623;
+    color: #81C784;
 }
 
 /* Links */
@@ -89,7 +93,7 @@ header h2 {
 }
 
 .links a:hover {
-    color: #F35623;
+    color: #4CAF50;
 }
 
 .dark-mode .links a {
@@ -97,7 +101,7 @@ header h2 {
 }
 
 .dark-mode .links a:hover {
-    color: #F35623;
+    color: #81C784;
 }
 
 /* About Section */
