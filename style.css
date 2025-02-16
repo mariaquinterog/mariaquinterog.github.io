@@ -61,7 +61,7 @@ header h2 {
     font-size: 1rem; /* Smaller subtitle */
     color: #4CAF50; /* Green color for subtitle */
     font-weight: 600; /* Semi-bold */
-    margin-bottom: 15px; /* Reduced spacing */
+    margin-bottom: 10px; /* Reduced spacing */
 }
 
 .dark-mode header h2 {
