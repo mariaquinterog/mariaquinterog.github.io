@@ -56,14 +56,35 @@ header h1 {
     color: #ffffff; /* White for dark mode */
 }
 
-header h2 {
-    font-size: 1.8rem; /* Larger subtitle */
+header h4.role {
+    font-size: 1.5rem; /* Larger subtitle */
     color: #4CAF50; /* Green color for subtitle */
     font-weight: 600; /* Semi-bold */
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Spacing between text and logo */
 }
 
-.dark-mode header h2 {
+header h4.role a.company {
+    color: #4CAF50; /* Green color for company name */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+header h4.role a.company:hover {
+    color: #388E3C; /* Darker green on hover */
+}
+
+.dark-mode header h4.role {
     color: #81C784; /* Light green for dark mode */
+}
+
+.dark-mode header h4.role a.company {
+    color: #81C784; /* Light green for dark mode */
+}
+
+.dark-mode header h4.role a.company:hover {
+    color: #66BB6A; /* Lighter green on hover in dark mode */
 }
 
 /* Links */
