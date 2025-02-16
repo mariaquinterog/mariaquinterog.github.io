@@ -7,13 +7,10 @@
 
 body {
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
-    padding: 20px;
 }
 
 .dark-mode {
@@ -22,9 +19,24 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    display: flex;
     width: 100%;
-    text-align: center;
+    height: 100vh;
+}
+
+/* Left side: Content */
+.left-content {
+    width: 60%; /* 60% of the page */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff; /* White background for content */
+}
+
+.dark-mode .left-content {
+    background-color: #1e1e1e; /* Dark background for content */
+    color: #ffffff;
 }
 
 header h1 {
@@ -56,7 +68,7 @@ header h2 {
 }
 
 .dark-mode .links a {
-    color: #bb86fc;
+    color: #bb86fc; /* Light purple for links in dark mode */
 }
 
 .about {
@@ -66,14 +78,22 @@ header h2 {
     margin: 0 auto;
 }
 
+/* Right side: Background image */
+.right-background {
+    width: 40%; /* 40% of the page */
+    background-image: url('assets/background.jpg'); /* Add your background image */
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-position: center; /* Center the image */
+}
+
 /* Toggle switch container */
 .theme-switch {
     position: fixed;
     top: 20px;
     right: 20px;
     display: inline-block;
-    width: 40px;
-    height: 20px;
+    width: 60px; /* Wider to fit emojis */
+    height: 30px; /* Taller to fit emojis */
     z-index: 1000;
 }
 
@@ -94,20 +114,27 @@ header h2 {
     bottom: 0;
     background-color: #ccc;
     transition: 0.4s;
-    border-radius: 20px;
+    border-radius: 30px; /* Rounded corners */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px; /* Add padding for emojis */
 }
 
-/* Slider circle */
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    left: 2px;
-    bottom: 2px;
-    background-color: white;
+/* Emojis inside the slider */
+.slider .emoji {
+    font-size: 14px; /* Adjust emoji size */
     transition: 0.4s;
-    border-radius: 50%;
+}
+
+/* Moon emoji (dark mode) */
+.slider .emoji:first-child {
+    opacity: 1; /* Visible in light mode */
+}
+
+/* Sun emoji (light mode) */
+.slider .emoji:last-child {
+    opacity: 0; /* Hidden in light mode */
 }
 
 /* Dark mode styles for the slider */
@@ -115,6 +142,10 @@ header h2 {
     background-color: #333;
 }
 
-.dark-mode .slider:before {
-    transform: translateX(20px);
+.dark-mode .slider .emoji:first-child {
+    opacity: 0; /* Hide moon emoji in dark mode */
+}
+
+.dark-mode .slider .emoji:last-child {
+    opacity: 1; /* Show sun emoji in dark mode */
 }
