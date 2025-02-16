@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 body {
@@ -39,17 +39,30 @@ body {
     color: #ffffff;
 }
 
+/* Header and Title */
 header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem; /* Larger title */
     margin-bottom: 10px;
+    font-weight: bold;
+    color: #333; /* Dark gray for light mode */
+}
+
+.dark-mode header h1 {
+    color: #ffffff; /* White for dark mode */
 }
 
 header h2 {
-    font-size: 1.5rem;
-    color: green;
+    font-size: 1.8rem; /* Larger subtitle */
+    color: #4CAF50; /* Green color for subtitle */
     margin-bottom: 20px;
+    font-weight: 600; /* Semi-bold */
 }
 
+.dark-mode header h2 {
+    color: #81C784; /* Light green for dark mode */
+}
+
+/* Links */
 .links {
     list-style: none;
     padding: 0;
@@ -58,24 +71,40 @@ header h2 {
 
 .links li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px; /* More spacing between links */
 }
 
 .links a {
     text-decoration: none;
     color: #333;
     font-size: 1.2rem;
+    font-weight: 500; /* Medium weight for links */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.links a:hover {
+    color: #4CAF50; /* Green on hover */
 }
 
 .dark-mode .links a {
     color: #bb86fc; /* Light purple for links in dark mode */
 }
 
+.dark-mode .links a:hover {
+    color: #81C784; /* Light green on hover in dark mode */
+}
+
+/* About Section */
 .about {
     font-size: 1.1rem;
     line-height: 1.8;
     max-width: 600px;
     margin: 0 auto;
+    color: #555; /* Slightly darker text for better readability */
+}
+
+.dark-mode .about {
+    color: #e0e0e0; /* Light gray for dark mode */
 }
 
 /* Right side: Background image */
