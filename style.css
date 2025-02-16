@@ -46,7 +46,7 @@ header {
 }
 
 header h1 {
-    font-size: 2rem; /* Smaller title */
+    font-size: 1.6rem; /* Smaller title */
     margin-bottom: 5px; /* Reduced spacing */
     font-weight: bold;
     color: #333; /* Dark gray for light mode */
@@ -57,7 +57,7 @@ header h1 {
 }
 
 header h2 {
-    font-size: 1.2rem; /* Smaller subtitle */
+    font-size: 1rem; /* Smaller subtitle */
     color: #4CAF50; /* Green color for subtitle */
     font-weight: 600; /* Semi-bold */
     margin-bottom: 15px; /* Reduced spacing */
