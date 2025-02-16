@@ -58,13 +58,13 @@ header h1 {
 
 header h2 {
     font-size: 1.2rem; /* Smaller subtitle */
-    color: #4CAF50;
+    color: #F35623;
     font-weight: 600;
     margin-bottom: 15px;
 }
 
 .dark-mode header h2 {
-    color: #81C784;
+    color: #F35623;
 }
 
 /* Links */
@@ -89,7 +89,7 @@ header h2 {
 }
 
 .links a:hover {
-    color: #4CAF50;
+    color: #F35623;
 }
 
 .dark-mode .links a {
@@ -97,7 +97,7 @@ header h2 {
 }
 
 .dark-mode .links a:hover {
-    color: #81C784;
+    color: #F35623;
 }
 
 /* About Section */
