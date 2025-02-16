@@ -27,7 +27,7 @@ body {
 /* Left side: Content */
 .left-content {
     width: 60%; /* 60% of the page */
-    padding: 40px;
+    padding: 20px; /* Reduced padding for smaller screens */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,12 +42,12 @@ body {
 /* Header and Title */
 header {
     text-align: left; /* Align text to the left */
-    margin-bottom: 30px; /* Add spacing below the header */
+    margin-bottom: 20px; /* Reduced spacing below the header */
 }
 
 header h1 {
-    font-size: 3rem; /* Larger title */
-    margin-bottom: 10px;
+    font-size: 2rem; /* Smaller title */
+    margin-bottom: 5px; /* Reduced spacing */
     font-weight: bold;
     color: #333; /* Dark gray for light mode */
 }
@@ -57,9 +57,10 @@ header h1 {
 }
 
 header h2 {
-    font-size: 1.8rem; /* Larger subtitle */
+    font-size: 1.2rem; /* Smaller subtitle */
     color: #4CAF50; /* Green color for subtitle */
     font-weight: 600; /* Semi-bold */
+    margin-bottom: 15px; /* Reduced spacing */
 }
 
 .dark-mode header h2 {
@@ -70,19 +71,19 @@ header h2 {
 .links {
     list-style: none;
     padding: 0;
-    margin-bottom: 30px; /* Add spacing below the links */
+    margin-bottom: 20px; /* Reduced spacing below the links */
     text-align: left; /* Align text to the left */
 }
 
 .links li {
     display: block; /* Display links in a block (one per line) */
-    margin: 10px 0; /* Add vertical spacing between links */
+    margin: 8px 0; /* Reduced vertical spacing between links */
 }
 
 .links a {
     text-decoration: none;
     color: #333;
-    font-size: 1.2rem;
+    font-size: 1rem; /* Smaller font size for links */
     font-weight: 500; /* Medium weight for links */
     transition: color 0.3s ease; /* Smooth color transition */
 }
@@ -101,8 +102,8 @@ header h2 {
 
 /* About Section */
 .about {
-    font-size: 1.1rem;
-    line-height: 1.8;
+    font-size: 1rem; /* Smaller font size for about section */
+    line-height: 1.6;
     max-width: 600px;
     margin: 0 auto;
     color: #555; /* Slightly darker text for better readability */
@@ -183,4 +184,37 @@ header h2 {
 
 .dark-mode .slider .emoji:last-child {
     opacity: 1; /* Show sun emoji in dark mode */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack content vertically on small screens */
+    }
+
+    .left-content {
+        width: 100%; /* Full width on small screens */
+        padding: 20px; /* Adjust padding for small screens */
+    }
+
+    .right-background {
+        width: 100%; /* Full width on small screens */
+        height: 300px; /* Fixed height for background image */
+    }
+
+    header h1 {
+        font-size: 1.8rem; /* Smaller title for small screens */
+    }
+
+    header h2 {
+        font-size: 1rem; /* Smaller subtitle for small screens */
+    }
+
+    .links a {
+        font-size: 0.9rem; /* Smaller font size for links on small screens */
+    }
+
+    .about {
+        font-size: 0.9rem; /* Smaller font size for about section on small screens */
+    }
 }
