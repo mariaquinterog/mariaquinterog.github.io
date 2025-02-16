@@ -43,6 +43,7 @@ body {
 header {
     text-align: left; /* Align text to the left */
     margin-bottom: 20px; /* Reduced spacing below the header */
+    margin-left: 75px;
 }
 
 header h1 {
@@ -73,6 +74,7 @@ header h2 {
     padding: 0;
     margin-bottom: 20px; /* Reduced spacing below the links */
     text-align: left; /* Align text to the left */
+    margin-left: 75px;
 }
 
 .links li {
