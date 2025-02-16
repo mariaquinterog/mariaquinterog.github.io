@@ -7,7 +7,7 @@
     <!-- Orange favicon -->
     <link rel="icon" type="image/png" href="assets/orange.jpg">
     <link rel="stylesheet" href="style.css">
-    <!-- Add a toggle button for light/dark mode -->
+    <!-- Add a toggle switch for light/dark mode -->
     <script>
         function toggleTheme() {
             const body = document.body;
@@ -28,10 +28,13 @@
     </script>
 </head>
 <body>
-    <div class="container">
-        <!-- Add the toggle button in the top-right corner -->
-        <button class="theme-toggle" onclick="toggleTheme()">🌙 Toggle Dark Mode</button>
+    <!-- Toggle switch in the top-right corner -->
+    <label class="theme-switch">
+        <input type="checkbox" onclick="toggleTheme()">
+        <span class="slider"></span>
+    </label>
 
+    <div class="container">
         <aside class="sidebar">
             <h1>Maria</h1>
             <h2>Web Developer</h2>
