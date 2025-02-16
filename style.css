@@ -7,8 +7,8 @@
 
 body {
     display: flex;
-    justify-content: center; /* Center the container horizontally */
-    align-items: center; /* Center the container vertically */
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     background-color: #f9f9f9;
     color: #333;
@@ -31,7 +31,7 @@ body {
 /* Left side: Content */
 .left-content {
     width: 60%; /* 60% of the page */
-    padding: 20px;
+    padding: 20px 40px; /* Add padding to align content */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -109,7 +109,7 @@ header h2 {
     font-size: 1rem;
     line-height: 1.6;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0;
     color: #555;
     text-align: left;
 }
@@ -198,7 +198,7 @@ header h2 {
 
     .left-content {
         width: 100%; /* Full width on small screens */
-        padding: 20px;
+        padding: 20px; /* Adjust padding for small screens */
     }
 
     .right-background {
