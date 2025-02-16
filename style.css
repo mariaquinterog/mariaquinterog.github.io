@@ -69,18 +69,10 @@ header h4.role a.company {
     color: #4CAF50; /* Green color for company name */
     text-decoration: none;
     transition: color 0.3s ease; /* Smooth color transition */
-    display: flex;
-    align-items: center;
-    gap: 5px; /* Spacing between logo and text */
 }
 
 header h4.role a.company:hover {
     color: #388E3C; /* Darker green on hover */
-}
-
-header h4.role a.company .logo {
-    width: 20px; /* Adjust logo size */
-    height: 20px; /* Adjust logo size */
 }
 
 .dark-mode header h4.role {
