@@ -69,6 +69,10 @@ header h2 {
     margin-bottom: 15px;
 }
 
+.flexxible {
+    color: #F35623;
+}
+
 .dark-mode header h2 {
     color: #81C784;
 }
