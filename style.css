@@ -32,7 +32,7 @@ body {
 
 /* Left side: Content */
 .left-content {
-    width: 60%; /* 60% of the page */
+    width: 50%; /* 60% of the page */
     padding: 20px 40px; /* Add padding to align content */
     display: flex;
     flex-direction: column;
@@ -126,7 +126,7 @@ header h2 {
 
 /* About Section */
 .about {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     line-height: 1.6;
     max-width: 600px;
     padding: 0px 50px 50px 0px;
@@ -141,7 +141,7 @@ header h2 {
 
 /* Right side: Background image */
 .right-background {
-    width: 40%;
+    width: 50%;
     background-image: url('assets/background.jpg');
     background-size: cover;
     background-position: center;
