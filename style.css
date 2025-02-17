@@ -27,10 +27,11 @@ body {
     width: 75%;
     max-width: 1800px; 
     height: 100vh;
-    margin: 0 auto; /* Center the container */
+    margin: 0 auto; 
+    /* Center the container 
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 
 /* Left side: Content */
@@ -150,27 +151,9 @@ header h2 {
     background-image: url('assets/background.jpg');
     background-size: cover;
     background-position: center;
-    /* A PARTIR DE AQI TEST width: 50%;  Mantiene la mitad del espacio en pantallas grandes */
     height: auto;
-    min-height: 400px;
-    background-size: cover;
-    background-position: center;
-}
-/* test */  
-@media (max-width: 768px) {
-    .right-background {
-        width: 100%; /* Ocupará todo el ancho en pantallas pequeñas */
-        height: 300px; /* Ajustar altura en móviles */
-    }
 }
 
-
-@media (max-width: 768px) {
-    .left-content {
-        flex-basis: 100%;
-        padding: 20px;
-    }
-}
 
 /* Toggle switch container */
 .theme-switch {
@@ -286,4 +269,12 @@ header h2 {
         font-size: 0.8rem; /* Even smaller font size for about section on mobile */
         padding: 0px;
     }
+
+    .right-background {
+       /* width: 100%;  Full width on small screens */
+        min-width: 480px;
+        height: 400px; /* Fixed height for background image */
+    }
+    
+    
 }
