@@ -90,6 +90,7 @@ header h2 {
 
 .links a {
     text-decoration: none;
+    display: block;  /* Padding below each link */
     color: #333;
     font-size: 1rem;
     font-weight: 500;
