@@ -25,7 +25,8 @@ body {
 .container {
     display: flex;
     width: 100%;
-    max-width: 1200px; /* Limit the maximum width */
+    /* max-width: 1200px;  Limit the maximum width */
+    min-width: 1024px;
     height: 100vh;
     margin: 0 auto; /* Center the container */
 }
