@@ -24,7 +24,7 @@ body {
 /* Container */
 .container {
     display: flex;
-    width: 100%;
+    width: 75%;
     /* max-width: 1200px;  Limit the maximum width */
     min-width: 1024px;
     height: 100vh;
@@ -53,10 +53,12 @@ header {
 }
 
 header h1 {
-    font-size: 2rem; /* Smaller title */
+    font-size: 1.7rem; 
     margin-bottom: 5px;
     font-weight: bold;
     color: #333;
+    margin-top:15px;
+    
 }
 
 .dark-mode header h1 {
