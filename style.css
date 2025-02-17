@@ -111,7 +111,7 @@ header h2 {
 
 /* About Section */
 .about {
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.6;
     max-width: 600px;
     margin: 0;
@@ -203,12 +203,12 @@ header h2 {
 
     .left-content {
         width: 100%; /* Full width on small screens */
-        padding: 20px; /* Adjust padding for small screens */
+        padding: 50px; /* Adjust padding for small screens */
     }
 
     .right-background {
         width: 100%; /* Full width on small screens */
-        height: 300px; /* Fixed height for background image */
+        height: 400px; /* Fixed height for background image */
     }
 
     header h1 {
