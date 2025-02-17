@@ -56,7 +56,7 @@ header {
 }
 
 header h1 {
-    font-size: 1.7rem; 
+    font-size: 1.4rem; 
     margin-bottom: 5px;
     font-weight: bold;
     color: #333;
@@ -109,7 +109,7 @@ header h2 {
     text-decoration: none;
     display: block;  /* Padding below each link */
     color: #333;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 500;
     transition: color 0.3s ease;
     display: block;
