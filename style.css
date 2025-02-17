@@ -81,12 +81,13 @@ header h2 {
     text-align: left;
 }
 
-.links li {
+ /*.links li {
     display: block;
     margin: 8px 0;
-    border-bottom: 1px solid #dcdcdc; /* Light gray line separating links */
-    padding-bottom: 8px; /* Padding below each link */
+    border-bottom: 1px solid #dcdcdc;  
+    padding-bottom: 8px; 
 }
+ */
 
 .links a {
     text-decoration: none;
@@ -95,6 +96,10 @@ header h2 {
     font-size: 1rem;
     font-weight: 500;
     transition: color 0.3s ease;
+    display: block;
+    margin: 8px 0;
+    border-bottom: 1px solid #dcdcdc; /* Light gray line separating links */
+    padding-bottom: 8px; /* Padding below each link */
 }
 
 .links a:hover {
