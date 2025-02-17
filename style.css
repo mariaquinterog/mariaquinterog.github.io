@@ -244,5 +244,6 @@ header h2 {
 
     .about {
         font-size: 0.8rem; /* Even smaller font size for about section on mobile */
+        padding: 0px;
     }
 }
