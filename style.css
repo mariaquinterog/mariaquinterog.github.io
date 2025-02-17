@@ -71,7 +71,11 @@ header h2 {
 
 .flexxible {
     color: #F35623;
-    decoration:none;
+    text-decoration:none;
+}
+
+.flexxible-logo {
+    margin-right:5px;
 }
 
 .dark-mode header h2 {
