@@ -24,7 +24,8 @@ body {
 /* Container */
 .container {
     display: flex;
-    width: 75%;
+   /*  width: 75%; */
+    width: 100%;
     max-width: 1800px; 
     height: 100vh;
     margin: 0 auto; 
