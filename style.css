@@ -7,208 +7,156 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
     background-color: #ffffff;
     color: #333;
-    line-height: 1.6;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
-.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
-}
-
-/* Container */
+/* Contenedor principal */
 .container {
     display: flex;
-    width: 90%;
-    max-width: 1400px;
-    min-height: 90vh; /* Allows dynamic height */
-    margin: 0 auto;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
 }
 
-/* Left side: Content */
+/* Contenido de la izquierda */
 .left-content {
-    width: 50%;
-    max-width: 700px;
-    padding: 20px;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 5vw;
     background-color: #ffffff;
-    min-height: 50vh; /* Prevents content from collapsing */
 }
 
-.dark-mode .left-content {
-    background-color: #1e1e1e;
-    color: #ffffff;
+/* Imagen de la derecha */
+.right-background {
+    flex: 1;
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
-/* Header and Title */
+/* Encabezado */
 header {
     text-align: left;
-    margin-bottom: 10px;
-    max-width: 100%;
+    margin-bottom: 20px;
 }
 
 header h1 {
-    font-size: 2rem; /* More adaptable font size */
+    font-size: 2.5rem;
     font-weight: bold;
     color: #333;
-    word-wrap: break-word; /* Prevents text overflow */
-}
-
-.dark-mode header h1 {
-    color: #ffffff;
 }
 
 header h2 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: #4CAF50;
     font-weight: 600;
-}
-
-.dark-mode header h2 {
-    color: #81C784;
 }
 
 /* Links */
 .links {
     list-style: none;
     margin-top: 20px;
-    text-align: left;
-    max-width: 100%;
 }
 
 .links a {
     text-decoration: none;
     display: block;
     color: #333;
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: 1rem;
     transition: color 0.3s ease;
     margin: 8px 0;
-    border-bottom: 1px solid #dcdcdc;
-    padding-bottom: 8px;
-    word-wrap: break-word; /* Prevents long words from breaking layout */
 }
 
 .links a:hover {
     color: #4CAF50;
 }
 
-.dark-mode .links a {
-    color: #bb86fc;
-}
-
-.dark-mode .links a:hover {
-    color: #81C784;
-}
-
-/* About Section */
+/* Descripción */
 .about {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
-    max-width: 100%;
-    padding: 10px 20px 20px 0px;
     color: #555;
     text-align: left;
-    word-wrap: break-word;
 }
 
-.dark-mode .about {
-    color: #e0e0e0;
-}
+/* Responsive Design */
 
-/* Right side: Background image */
-.right-background {
-    width: 50%;
-    background-image: url('assets/background.jpg');
-    background-size: cover;
-    background-position: center;
-    min-height: 400px;
-}
-
-/* Toggle switch container */
-.theme-switch {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 60px;
-    height: 30px;
-    z-index: 1000;
-}
-
-/* Responsive Design Fixes */
-
-/* Small screens below 700px */
-@media (max-height: 700px) {
+/* Menos de 700px: Ocultar imagen y centrar texto */
+@media (max-width: 699px) {
     .container {
         flex-direction: column;
         align-items: center;
+        text-align: center;
+        padding: 10vw;
     }
 
     .left-content {
-        width: 90%;
-        text-align: center;
+        width: 100%;
+        padding: 8vw;
     }
 
     .right-background {
-        display: none; /* Hides the image for very small screens */
+        display: none;
     }
 
     header h1 {
-        font-size: 1.5rem;
-    }
-
-    header h2 {
-        font-size: 1.1rem;
+        font-size: 2rem;
     }
 
     .about {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
 }
 
-/* Medium screens 700px - 1000px */
-@media (min-width: 700px) and (max-width: 1000px) {
+/* De 700px a 1000px: Imagen y texto 50/50 */
+@media (min-width: 700px) and (max-width: 999px) {
     .container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        flex-direction: row;
     }
 
     .left-content {
-        width: 100%;
+        flex: 1;
+        padding: 6vw;
     }
 
     .right-background {
-        width: 100%;
-        height: 300px;
-        display: block;
+        flex: 1;
+        height: auto;
+    }
+
+    header h1 {
+        font-size: 2.3rem;
+    }
+
+    .about {
+        font-size: 1.2rem;
     }
 }
 
-/* Large screens 1000px+ */
+/* Más de 1000px: Diseño amplio y espacioso */
 @media (min-width: 1000px) {
     .container {
         flex-direction: row;
     }
 
     .left-content {
-        width: 50%;
+        flex: 1;
+        padding: 8vw;
+        max-width: 50%;
     }
 
     .right-background {
-        width: 50%;
-        height: auto;
-        display: block;
+        flex: 1;
+        height: 100vh;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .about {
+        font-size: 1.3rem;
     }
 }
